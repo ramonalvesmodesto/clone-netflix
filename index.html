@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copia Netflix</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.css">
+
+    <script src="js/html5shiv.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/owl.js"></script>
+    <script type="text/javascript" src="js/owl/owl.carousel.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="topo">
+
+                <div id="logo">
+                    <img src="img/copyflix.png" alt="CopyFlix">
+                </div>
+
+                <nav id="menu-esquerda">
+                    <ul>
+                        <li><a href="#">Início</a> </li>
+                        <li><a href="#">Séries</a></li>
+                        <li><a href="#">Filmes</a></li>
+                        <li> <a href="#">Documentários</a></li>
+                        <li><a href="#">Minha lista</a></li>
+                    </ul>
+                </nav>
+
+                <nav id="menu-direita">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        <li><a href="#"><a href="#">Infantil</a></a></li>
+                        <li><a href="#"><i class="fas fa-gift"></i></a></li>
+                        <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <div class="conteudo">
+                    <h1>La casa de papel</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat hendrerit neque sit amet rutrum. Integer ornare mi lacus, a pharetra nisl accumsan vitae.</p>
+                <div class="botoes">
+                    <a href="#">
+                    <button role="button" class="botao1"><i class="fas fa-play"></i>Assitir</button>
+                    </a>
+                    <button onclick="popupabrir()" role="button" class="botao2"><i class="fas fa-info-circle"></i>Mais informações</button>
+                </div>
+
+                <section id="popup" class="popup">
+                    <a class="fechar" href="javascript: popupfechar()"><i class="fas fa-2x fa-times-circle"></i></a>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZpBrBop30m4?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="icones-popup">
+                        <i class="fas fa-3x fa-play-circle"></i>
+                        <i class="fas fa-3x fa-check-circle"></i>
+                        <i class="fas fa-3x fa-thumbs-up"></i>
+                        <i class="fas fa-3x fa-thumbs-down"></i>
+                        <i class="fas fa-3x fa-info-circle"></i>
+                    </div>
+    
+                    <div class="nota-filme">
+                        <i class="fab fa-2x fa-imdb"></i>
+                        <i class="fas fa-star"></i>
+                        <h3>8,3</h3>
+    
+                    </div>
+                    
+                </section>
+                </div>
+                
+            </div> 
+            
+            <div class="classificacao-etaria">
+                <span>
+                    <h3>16</h3>
+                </span>
+                
+            </div>          
+        </div>
+    </main>
+
+    <div class="carosel">
+        <div class="container">
+            <h4>Novidades</h4>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img  class="box" src="img/imagem1.jpg" alt="Mulher-Maravilha 1984">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem2.jpg" alt="Monster Hunter">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem3.jpg" alt="Morltal Kombat">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem4.jpg" alt="Bad Boys Para Sempre">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem5.jpg" alt="Ava">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem6.jpg" alt="Velozes e Furiosos">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem7.jpg" alt="Tenet">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem8.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem9.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem10.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem11.jpg" alt="">
+                </div>
+            </div>
+
+            <h4>Filmes</h4>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box" src="img/imagem11.jpg" alt="Mulher-Maravilha 1984">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem10.jpg" alt="Monster Hunter">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem9.jpg" alt="Morltal Kombat">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem8.jpg" alt="Bad Boys Para Sempre">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem7.jpg" alt="Ava">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem6.jpg" alt="Velozes e Furiosos">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem5.jpg" alt="Tenet">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem4.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem3.jpg" alt="">
+                </div>
+                <div class="item">
+                </div>
+                <div class="item">
+                    <img class="box" src="img/imagem1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="conteudo">
+                <section class="redes-sociais">
+                    <i class="fab fa-2x fa-facebook"></i>
+                    <i class="fab fa-2x fa-instagram"></i>
+                    <i class="fab fa-2x fa-twitter"></i>
+                    <i class="fab fa-2x fa-youtube"></i>
+                </section>
+                
+                <div id="rodape">                    
+                    <section class="caixa-rodape">
+                        <ul>
+                            <li><a href="#">Idioma e legendas</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                            <li><a href="#">Privacidade</a></li>
+                            <li><a href="#">Entre em contato</a></li>
+                        </ul>
+            
+                        <button class="botao" role="button">Código do serviço</button>
+                    </section>
+            
+                    <section class="caixa-rodape">
+                        <ul>
+                            <li><a href="#">Audiodescrição</a></li>
+                            <li><a href="#">Relacionamentos</a></li>
+                            <li><a href="#">Avisos</a></li>
+                        </ul>
+                    </section>
+            
+                    <section class="caixa-rodape">
+                        <ul>
+                            <li><a href="#">Centro de ajuda</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                            <li><a href="#">Preferências de cookies</a></li>
+                        </ul>
+                    </section>
+            
+                    <section class="caixa-rodape">
+                        <ul>
+                            <li><a href="#">Cartão pré-pago</a></li>
+                            <li><a href="#">Termos de uso</a></li>
+                            <li><a href="#">Informações corporativas</a></li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div id="direitos-reservados">
+                    &copy; <span>2021, By Ramon</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/8ad07c6848.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
