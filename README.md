@@ -1,2 +1,2 @@
 # clone-netflix
-copyflix.github.io
+https://ramon9825.github.io/clone-netflix/
