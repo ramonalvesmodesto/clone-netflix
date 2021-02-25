@@ -375,6 +375,12 @@ footer .conteudo {
         width: 70%;
         margin: 0 auto;
     }
+
+    .filme-principal {
+        background-position: center top;
+         
+        
+    }
 }
 
 @media screen and (max-width: 566px) {
