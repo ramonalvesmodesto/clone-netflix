@@ -358,6 +358,9 @@ footer .conteudo {
 } 
 
 @media screen and (max-width: 654px) {
+    .container {
+        padding: 10px 13px;
+    }
 
     #topo {
         display: flex;
