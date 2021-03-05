@@ -266,6 +266,10 @@ span {
     left: 0;
 }
 
+.owl-carousel .item img.box, .owl-carousel .item {
+    width: 100%;
+}
+
 /*Rodapé*/
 #rodape {
     display: flex;
@@ -392,7 +396,7 @@ footer .conteudo {
         flex-direction: column;
         justify-content: flex-start;
         position: absolute;
-        top: 85px;
+        top: 84px;
         right: 0;
         left: 0;
         display: none;
@@ -421,6 +425,10 @@ footer .conteudo {
 
     .popup {
         width: 90%;
+    }
+
+    .owl-carousel .item img.box, .owl-carousel .item {
+        width: 200px;
     }
 }
 
