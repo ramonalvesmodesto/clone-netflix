@@ -18,7 +18,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 a{
@@ -34,12 +34,13 @@ header {
     position: fixed;
     width: 100%;
     background: linear-gradient(rgba(0 ,0 , 0, 0.8), rgba(0 ,0 , 0, 0)100%);
+    z-index: 2;
 }
 
 h4 {
     color: #FFF;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
@@ -71,7 +72,7 @@ nav {
 #topo nav#menu-esquerda {
     width: 100%;
     margin-right: 10px;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 #topo nav#menu-direita {
@@ -89,7 +90,6 @@ nav ul li{
 
 nav ul li a {
     margin-right: 10px;
-    font-size: 15px;
     font-weight: bold;
 }
 
@@ -103,6 +103,10 @@ nav ul li a:hover {
 
 #topo i:hover {
     color: var(--lilas);
+}
+
+nav .btn-menumobile {
+    display: none;
 }
 
 /*Conteudo de destaque*/
@@ -119,13 +123,12 @@ nav ul li a:hover {
 }
 
 .filme-principal .conteudo h1 {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 30px;
 }
 
 .filme-principal .conteudo p {
-    font-size: 17px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
 }
 
 .filme-principal .botao1, .filme-principal .botao2 {
@@ -184,7 +187,7 @@ nav ul li a:hover {
     padding: 10px 0px;
     width: 60px;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.8em;
     border-radius: 5px;
 }
 
@@ -196,13 +199,13 @@ nav ul li a:hover {
     right: 0;
     left: 0;
     margin: auto;
-    background-color: rgba(0 ,0 , 0, 0.9);
+    background-color: rgba(24, 22, 22, 0.9);
     width: 600px;
     text-align: center;
     border-radius: 10px;
     padding: 20px;
     display: none;
-    padding-bottom: 70px;
+    z-index: 2;
 }
 
 .popup .fechar {
@@ -211,28 +214,20 @@ nav ul li a:hover {
     top: -5px;
 }
 
+.popup iframe {
+    width: 97%;
+    height: 315px; 
+}
+
 .fa-times-circle:hover {
     color: var(--vermelho);
-}
-
-.popup .icones-popup {
-    text-align: left;
-    padding: 15px;
-}
-
-.popup .icones-popup .fas {
-    margin-right: 8px;
-    color: #333;
-}
-
-.popup .icones-popup i.fas:hover {
-    color: #FFF;
 }
 
 .nota-filme {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 20px;
 }
 
 .nota-filme .fab {
@@ -256,7 +251,7 @@ span {
 
 /*Carosel*/
 .carosel {
-    margin-top: -120px;
+    margin-top: 20px;
 }
 
 .owl-carousel .item .caixa {
@@ -271,16 +266,11 @@ span {
     left: 0;
 }
 
-.box {
-    width: 400px;
-}
-
 /*Rodapé*/
 #rodape {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 13px;
     font-weight: 540;
     margin-top: 20px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -345,29 +335,14 @@ footer .conteudo {
     }
 }
 
-@media screen and (max-width: 878px) {
+ @media screen and (max-width: 878px) {
+    /*Topo*/    
     header {
-        position: absolute;
+        background-color: rgba(0 ,0 , 0, 0.8);
     }
 
-    /*Topo*/
-    #topo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #topo nav#menu-esquerda {
-        width: 100%;
-        margin: 0;
-        justify-content: center;
-        margin-top: 13px;
-    }
-    
     #topo nav#menu-direita {
-        width: 100%;
-        justify-content: center;
-        margin-top: 10px;
+        display: none;
     }
 
     /*Rodape*/
@@ -376,10 +351,77 @@ footer .conteudo {
         margin: 0 auto;
     }
 
-    .carosel {
-        margin-top: -80px;
+} 
+
+@media screen and (max-width: 654px) {
+
+    #topo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
+    #topo i:hover {
+        color: var(--vermelho);
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    nav .btn-menumobile {
+        display: block !important;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        font-size: 1.75em;
+    }
+
+    .open {
+        display: flex !important;
+    }
+
+    nav#menu-esquerda {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    nav#menu-esquerda ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top: 85px;
+        right: 0;
+        left: 0;
+        display: none;
+    }
+
+    nav#menu-esquerda ul li {
+        padding: 15px;
+        background-color: rgba(0 ,0 , 0, 0.8);
+    }
+
+    nav#menu-esquerda ul li:hover {
+        background-color: rgb(47, 46, 46);
+    }
+
+    nav#menu-esquerda ul li {
+        padding-left: 30px;
+    }
+
+    .filme-principal .conteudo h1 {
+        font-size: 3em;
+    }
+
+    .classificacao-etaria h3 {
+        font-size: 1.3em;
+    }
+
+    .popup {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 566px) {

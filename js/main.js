@@ -1,3 +1,13 @@
+$( document ).ready(function() {
+    var btnMenuMobile = $('.btn-menumobile');
+  
+    $(btnMenuMobile).on('click', function() {
+      $('#menu-esquerda ul').toggleClass('open');
+    });
+  });
+
+
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -24,6 +34,11 @@ function popupfechar() {
     document.getElementById('popup').style.display = 'none';
 
 }
+
+// function open() {
+//     document.getElementById('open').style.display = 'block';
+
+// }
 
 
 
