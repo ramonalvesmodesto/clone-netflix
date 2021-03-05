@@ -429,6 +429,14 @@ footer .conteudo {
     .popup {
         width: 90%;
     }
+
+    #rodape {
+        justify-content: space-between;
+    }
+
+    footer .conteudo {
+        width: 88%;
+    }
 }
 
 @media screen and (max-width: 566px) {
