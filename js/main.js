@@ -14,13 +14,16 @@ $('.owl-carousel').owlCarousel({
     nav:false,
     responsive:{
         0:{
+            item:1
+        },
+        467:{
+            items:2
+        },
+        655:{
             items:3
         },
-        600:{
-            items:5
-        },
         1000:{
-            items:8
+            items:5
         }
     }
 })
