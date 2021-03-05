@@ -426,10 +426,6 @@ footer .conteudo {
     .popup {
         width: 90%;
     }
-
-    .owl-carousel .item img.box, .owl-carousel .item {
-        width: 200px;
-    }
 }
 
 @media screen and (max-width: 566px) {
