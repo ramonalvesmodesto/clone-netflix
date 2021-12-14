@@ -1,2 +1,2 @@
 # clone-netflix
-https://ramon-alves-modesto.github.io/clone-netflix/
+https://ramonalvesmodesto.github.io/clone-netflix/
